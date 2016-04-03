@@ -21,7 +21,8 @@ int main(){
 	ofstream outfile;
 	outfile.open("coefficient.csv");
 
-	for (auto k : a3){
-		outfile << k << ",";
+	for (int k = 0; k < a3.size() - 1; k++){
+		outfile << a3[k] << ",";
 	}
+	outfile << a3[a3.size() - 1];
 }
