@@ -79,19 +79,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Deconstructed.h" />
     <ClInclude Include="Haar.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Deconstructed.cpp" />
     <ClCompile Include="Haar.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="math.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="..\README.md" />
+    <None Include="coefficient.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
