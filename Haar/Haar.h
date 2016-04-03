@@ -1,3 +1,5 @@
+#include <vector>
+
 #ifndef HAAR_H
 #define HAAR_H
 
