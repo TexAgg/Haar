@@ -22,6 +22,6 @@ int main(){
 	outfile.open("coefficient.csv");
 
 	for (auto k : a3){
-		outfile << k << "\n";
+		outfile << k << ",";
 	}
 }
