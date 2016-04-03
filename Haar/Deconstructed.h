@@ -12,7 +12,7 @@ public:
 	std::vector<std::vector<double>> a;
 	std::vector<std::vector<double>> b;
 
-	void subscripts();
+	void subscripts(int j);
 
 private:
 	int size;

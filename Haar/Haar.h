@@ -1,4 +1,5 @@
 #include <vector>
+#include <math.h>
 
 #ifndef HAAR_H
 #define HAAR_H

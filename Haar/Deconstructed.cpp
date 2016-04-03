@@ -1,13 +1,12 @@
 #include "Deconstructed.h"
 
-void Deconstructed::subscripts(){
-	for (int j = 1; j < size; j++){
-		std::vector<double> temp;
-		for (int k = 0; ; k++){
-			for (int l = 0; l < k; l++){
-				if (l % 2 * k == 0){}
-					// what am i doing
-			}
-		}
+void Deconstructed::subscripts(int j){
+	j--;
+	a[j].resize(2*a[j - 1].size());
+	for (int k = 0; k < a[j-1].size(); k++){
+		int l = 2 * k;
+		a[j][l] = a[j - 1][k] + b[j - 1][k];
+		l++;
+		a[j][l] = a[j - 1][k] - b[j - 1][k];
 	}
 }
