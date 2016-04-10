@@ -5,12 +5,14 @@
 
 using namespace std;
 
-int main(){
+int main() {
 	vector<double> a2 = { 0.5, 2, 2.5, -1.5 };
 	vector<double> b2 = { -1.5, -1, 0.5, -0.5 };
 
+	// a^3 is twice the size of a^2 (and b^2)
 	vector<double> a3(2 * a2.size());
 
+	// Calculate the values of a^3 
 	for (int k = 0; k < a2.size(); k++){
 		int l = 2 * k;
 		a3[l] = a2[k] + b2[k];
@@ -20,7 +22,6 @@ int main(){
 
 	ofstream outfile;
 	outfile.open("coefficient.csv");
-
 	for (int k = 0; k < a3.size() - 1; k++){
 		outfile << a3[k] << ",";
 	}

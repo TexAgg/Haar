@@ -4,7 +4,6 @@
 #ifndef HAAR_H
 #define HAAR_H
 
-#pragma once
 class Haar
 {
 public:
