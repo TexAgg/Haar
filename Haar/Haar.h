@@ -1,8 +1,10 @@
+#ifndef HAAR_H
+#define HAAR_H
+
 #include <vector>
 #include <math.h>
 
-#ifndef HAAR_H
-#define HAAR_H
+namespace matt {
 
 class Haar
 {
@@ -10,8 +12,10 @@ public:
 	Haar();
 	~Haar();
 
-	static double phi(double x);
-	static double psi(double x);
+	friend double phi(double x);
+	friend double psi(double x);
 };
+
+} // End matt namespace
 
 #endif
